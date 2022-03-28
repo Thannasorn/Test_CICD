@@ -1,0 +1,17 @@
+image: node:latest
+
+stages:  
+  - test     
+  - build
+  
+testPJ:   
+  stage: test   
+  script:
+    - yarn
+    - yarn test
+
+buildPJ:      
+  stage: build
+  script:
+    - yarn
+    - yarn build
